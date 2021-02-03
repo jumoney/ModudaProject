@@ -12,13 +12,13 @@ import com.springbook.biz.user.impl.UserDAO;
 
 @Controller
 public class LoginController {
+	
 	@RequestMapping(value="/login.do", method=RequestMethod.GET)
 	public String loginView(@ModelAttribute("user") UserVO vo) {
 		System.out.println("로그인 화면으로 이동");
 		vo.setId("test");
 		vo.setPassword("test123");
 		return "WEB-INF/login.jsp";
-
 	}
 	
 	@RequestMapping(value="/login.do", method=RequestMethod.POST)
@@ -30,7 +30,7 @@ public class LoginController {
 		UserVO user = userDAO.getUser(vo);
 		if(user != null) {
 			session.setAttribute("userName", user.getName());
-			return "getBoardList.do";
+			return "redirect:getKakaoMap.do";
 		}
 		else return "WEB-INF/login.jsp";
 
