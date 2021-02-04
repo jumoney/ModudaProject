@@ -6,6 +6,7 @@
              version="2.1">
 	<persistence-unit name="springboard">
 	<class>com.springbook.biz.board.BoardVO</class>
+	<class>com.springbook.biz.user.UserVO</class>
 	<properties>
 		<!-- 필수 속성 -->
 		<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>

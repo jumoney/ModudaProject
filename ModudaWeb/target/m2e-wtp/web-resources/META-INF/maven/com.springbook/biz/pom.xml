@@ -15,6 +15,35 @@
         <jaxb.version>2.2.11</jaxb.version>
 	</properties>
 	<dependencies>
+	<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>4.2.4.RELEASE</version>
+ </dependency>
+ <dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-beans</artifactId>
+  <version>4.2.4.RELEASE</version>
+</dependency>
+<dependency> 
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.el</artifactId>
+        <version>3.0.0</version>
+     </dependency>
+	<!-- 스프링부트 데이터 JPA -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+   			<artifactId>spring-data-jpa</artifactId>
+   			<version>1.9.0.RELEASE</version>
+		</dependency>
+
+		<!-- 프로젝트 lombok (get,set 을 편리하게 만들수 있는 오픈소스 라이브러리) -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.10</version>
+			<scope>provided</scope>
+		</dependency>
 		<!-- JPA, 하이버네이트 -->
 		<dependency>
 			<groupId>org.hibernate</groupId>

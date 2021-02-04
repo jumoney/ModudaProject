@@ -30,7 +30,7 @@ if (navigator.geolocation) {
 
 		//커스텀 오버레이에 표시할 내용입니다     
 		//HTML 문자열 또는 Dom Element 입니다 
-		var content = '<div class ="label"><img class="profileImg" src="/images/userProfile/testImg.jpg"></img><div>닉네임란</div></div>';
+		var content = '<div class ="label"><img class="profileImg" src="${user.profileImg}"></img><div>닉네임란</div></div>';
 
 
 

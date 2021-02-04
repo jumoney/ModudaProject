@@ -11,7 +11,7 @@
 	<div class="text_box">
 		<center>
 		<!-- 회원 가입 정보 폼 -->
-			<form action="signUp.do" method="post">
+			<form action="insertUser.do" method="post">
 				<table width="940" style="padding: 5px 0 5px 0;">
 					<h1>회원가입</h1>
 					<tr height="2" bgcolor="#01A9DB">
@@ -27,14 +27,8 @@
 						<td><input type="password" name="password"> 영문/숫자포함 6자 이상</td>
 					</tr>
 					<tr>
-						<th>비밀번호 확인</th>
-						<td><input type="password" name="password_re"></td>
-					</tr>
-					<tr>
-					<tr>
 						<th>이메일</th>
-						<td><input type='text' name="email">@ <input
-							type='text' name="email_dns"></td>
+						<td><input type='text' name="email">
 					</tr>
 					<tr>
 					</tr>
